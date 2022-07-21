@@ -14,7 +14,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: SonarQube Scan
-      run: mvn -B verify sonar:sonar -Dsonar.projectKey=javareachability -Dsonar.organization=javareachability -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
+      run: mvn -B verify sonar:sonar -Dsonar.projectKey=javareachability2 -Dsonar.organization=javareachability2 -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
