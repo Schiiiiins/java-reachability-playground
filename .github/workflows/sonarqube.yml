@@ -1,3 +1,5 @@
+name: Sonarcloud-Check
+on: push
 jobs:
   build:
   
